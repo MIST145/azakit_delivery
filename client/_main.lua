@@ -34,7 +34,7 @@ RegisterNetEvent('azakit_delivery:Check', function()
     end
     if hasItem then
         onjob = true
-        TriggerEvent('azakit_delivery:starttransport')
+        TriggerEvent('azakit_delivery:startdeli')
     else
         lib.notify({
             position = 'top',
@@ -44,8 +44,8 @@ RegisterNetEvent('azakit_delivery:Check', function()
     end
 end)
 
-RegisterNetEvent("azakit_delivery:starttransport")
-AddEventHandler("azakit_delivery:starttransport", function()
+RegisterNetEvent("azakit_delivery:startdeli")
+AddEventHandler("azakit_delivery:startdeli", function()
 
 	lib.notify({
 		position = 'top',
@@ -53,36 +53,36 @@ AddEventHandler("azakit_delivery:starttransport", function()
 		type = 'success'
 	  })
 
-	local itslocation = math.random(1, #Transportlocations)
-    nu = Transportlocations[itslocation]
-	BlipMaken(nu)
-	transportgestart = true
+	local itslocation = math.random(1, #Delilocations)
+    co = Delilocations[itslocation]
+	BlipMaken(co)
+	delitgestart = true
 end)
 
 BlipMaken = function()
-    deliveryblip = AddBlipForCoord(nu.x, nu.y, nu.z)
-    SetBlipSprite (deliveryblip, Transportblipsprite)
-    SetBlipDisplay(deliveryblip, 4)
-    SetBlipScale  (deliveryblip, blipscale)
-    SetBlipAsShortRange(deliveryblip, true)
-    SetBlipColour (deliveryblip, blipcolour)
-    SetBlipRoute(deliveryblip, true)
+    deliblip = AddBlipForCoord(co.x, co.y, co.z)
+    SetBlipSprite (deliblip, blipsprite)
+    SetBlipDisplay(deliblip, 4)
+    SetBlipScale  (deliblip, blipscale)
+    SetBlipAsShortRange(deliblip, true)
+    SetBlipColour (deliblip, blipcolour)
+    SetBlipRoute(deliblip, true)
 
     BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString(_("Deliveryblipname"))
-    EndTextCommandSetBlipName(deliveryblip)
+    AddTextComponentString(_("deliblipname"))
+    EndTextCommandSetBlipName(deliblip)
 end
 
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
-        sheesh3 = true
-		if transportgestart then
+        emez = true
+		if delitgestart then
 			local coords = GetEntityCoords(PlayerPedId())
-			if GetDistanceBetweenCoords(coords, nu.x, nu.y, nu.z, true) < 3 then
-				sheesh3 = false
-				DrawMarker(20, nu.x, nu.y, nu.z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.3, 0.2, 0, 168, 243, 100, false, true, 2, true, nil, nil, false)
-				DrawScriptText(vector3(nu.x,nu.y,nu.z+0.2), _("Transportdraw"))
+			if GetDistanceBetweenCoords(coords, co.x, co.y, co.z, true) < 3 then
+				emez = false
+				DrawMarker(20, co.x, co.y, co.z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.3, 0.2, 0, 168, 243, 100, false, true, 2, true, nil, nil, false)
+				DrawScriptText(vector3(co.x,co.y,co.z+0.2), _("Transportdraw"))
 				if IsControlJustReleased(0, 38) then
 					if lib.progressCircle({
 						duration = Duration,
@@ -98,16 +98,16 @@ Citizen.CreateThread(function()
 							clip = Animclip
 						},
 					}) then TriggerServerEvent('azakit_delivery:geleverd')
-						transportgestart = false
-						RemoveBlip(deliveryblip) 
+						delitgestart = false
+						RemoveBlip(deliblip) 
 					end
 				end
 			else
-				sheesh3 = true
+				emez = true
 			end
 		end
 	end
-    if sheesh3 then
+    if emez then
         Wait(500)
     end
 end)
