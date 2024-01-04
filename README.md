@@ -7,7 +7,7 @@ Everything can be easily changed in the config.lua file.
 https://www.youtube.com/watch?v=H6dPLzQEFm4
 
 # Install
-- Clone or Download the [repository](https://github.com/).
+- Clone or Download the [repository](https://github.com/AzakitHU/azakit_delivery).
 - Add the **azakit_delivery** to your resources folder.
 - Add `ensure azakit_delivery` to your **server.cfg**.
 
