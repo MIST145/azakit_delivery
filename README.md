@@ -4,6 +4,7 @@ In order to receive the coordinates, the informant NPC performs checks. Do you h
 Everything can be easily changed in the config.lua file.
 
 * Easy configuration
+* Checking items
 * 10 preset addresses
 * Discord Webhook
 
