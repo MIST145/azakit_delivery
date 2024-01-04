@@ -29,7 +29,7 @@ Maxamsell = 50 -- maximum number of pieces that can be sold in one round
 Animdict = 'timetable@jimmy@doorknock@'
 Animclip = 'knockdoor_idle'
 
-Transportlocations = {
+Delilocations = {
     {x = 2634.3911,  y = 3292.0486,  z = 55.7284},
     {x = 636.7974,  y = 2785.6919,  z = 42.0084},
     {x = -2520.7954,   y = 2310.1492, z = 33.2158},
