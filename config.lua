@@ -17,7 +17,7 @@ START_NPC = {
 
 blipscale = 1.0
 blipcolour = 2
-blipsprite = 570
+blipsprite = 501
 
 rewarditem = 'black_money' -- money
 price = 100  -- price of one piece
