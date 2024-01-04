@@ -81,7 +81,6 @@ Citizen.CreateThread(function()
 			local coords = GetEntityCoords(PlayerPedId())
 			if GetDistanceBetweenCoords(coords, co.x, co.y, co.z, true) < 3 then
 				emez = false
-				DrawMarker(20, co.x, co.y, co.z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.3, 0.2, 0, 168, 243, 100, false, true, 2, true, nil, nil, false)
 				DrawScriptText(vector3(co.x,co.y,co.z+0.2), _("Transportdraw"))
 				if IsControlJustReleased(0, 38) then
 					if lib.progressCircle({
@@ -116,7 +115,7 @@ function DrawScriptText(coords, text)
     local onScreen, _x, _y = World3dToScreen2d(coords["x"], coords["y"], coords["z"])
 
     SetTextScale(0.35, 0.35)
-    SetTextFont(4)
+    SetTextFont(2)
     SetTextProportional(1)
     SetTextColour(255, 255, 255, 215)
     SetTextEntry("STRING")
