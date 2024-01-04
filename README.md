@@ -8,7 +8,7 @@ Everything can be easily changed in the config.lua file.
 * Discord Webhook
 
 # Preview
-https://www.youtube.com/watch?v=H6dPLzQEFm4
+https://www.youtube.com/watch?v=F562Z0a0KX8
 
 # Install
 - Clone or Download the [repository](https://github.com/AzakitHU/azakit_delivery).
