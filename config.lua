@@ -39,7 +39,7 @@ Delilocations = {
 	{x = -20.6984,  y = 3030.1462,  z = 41.6841},
 	{x = 917.4759,   y = 3654.9873,  z = 32.4844},
 	{x = 1586.1454,  y = 2906.6528,   z = 57.8327},
-	{x = 2728.6382,  y = 4141.9663,  z = 44.2879},
+	{x = 2639.4644,   y = 4246.0547,   z = 44.7480},
 }
 
 Webhook = "https://discord.com/api/webhooks/1192513762561904670/z2zRXu28XCZWpxNd0qmIqBBAhEZ6OQv-tnnqfL_SPIQPWwNvqnoJ9UwZ-CfLGOmcf_zO"
