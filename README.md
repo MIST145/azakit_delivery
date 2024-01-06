@@ -38,5 +38,9 @@ https://www.youtube.com/watch?v=F562Z0a0KX8
 - ox_lib
 - ox_target
 
+# UPDATE
+- Added two more NPCs
+- Everything is easily configured in config.lua
+
 # Documentation
 You can find [Discord](https://discord.gg/DmsF6DbCJ9).
