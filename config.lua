@@ -63,7 +63,7 @@ START_NPC2 = {
 }
 
 rewarditem2 = 'black_money' -- money
-price2 = 100  -- price of one piece
+price2 = 200  -- price of one piece
 Duration2 = 20000
 
 Minamsell2 = 10 -- minimum number of pieces that can be sold in one round
