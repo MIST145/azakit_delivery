@@ -106,8 +106,8 @@ rewarditem3 = 'money' -- money
 price3 = 100  -- price of one piece
 Duration3 = 20000
 
-Minamsell3 = 2 -- minimum number of pieces that can be sold in one round
-Maxamsell3 = 3 -- maximum number of pieces that can be sold in one round
+Minamsell3 = 1 -- minimum number of pieces that can be sold in one round
+Maxamsell3 = 2 -- maximum number of pieces that can be sold in one round
 
 Animdict3 = 'timetable@jimmy@doorknock@'
 Animclip3 = 'knockdoor_idle'
