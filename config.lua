@@ -1,6 +1,11 @@
 LANGUAGE = 'en'
 Webhook = "https://discord.com/api/webhooks/1192513762561904670/z2zRXu28XCZWpxNd0qmIqBBAhEZ6OQv-tnnqfL_SPIQPWwNvqnoJ9UwZ-CfLGOmcf_zO"
 
+
+blipscale = 1.0
+blipcolour = 2
+blipsprite = 501
+
 ---SELL 1---
 ------------
 SELLITEM = "weed"  -- sales item to sell
@@ -16,10 +21,6 @@ START_NPC = {
         heading = 290.8636
     }
 }
-
-blipscale = 1.0
-blipcolour = 2
-blipsprite = 501
 
 rewarditem = 'black_money' -- money
 price = 100  -- price of one piece
@@ -61,10 +62,6 @@ START_NPC2 = {
     }
 }
 
-blipscale2 = 1.0
-blipcolour2 = 2
-blipsprite2 = 501
-
 rewarditem2 = 'black_money' -- money
 price2 = 100  -- price of one piece
 Duration2 = 20000
@@ -104,10 +101,6 @@ START_NPC3 = {
         heading = 328.1299
     }
 }
-
-blipscale3 = 1.0
-blipcolour3 = 2
-blipsprite3 = 501
 
 rewarditem3 = 'money' -- money
 price3 = 100  -- price of one piece
