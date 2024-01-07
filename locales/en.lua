@@ -8,7 +8,7 @@ Locales["en"] = {
     gotodelivery = "Go to the place marked on the map!",    
     Transportdraw = "[~g~E~w~] Knock",
     Sell = "Transfer in progress...",
-    Deliveryblipname = "Delivery Point",
+    deliblipname = "Delivery Point",
     ---SELL 2---
     ------------
     start_npc2 = "Sell Coke",
