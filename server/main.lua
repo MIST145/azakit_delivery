@@ -1,3 +1,5 @@
+local ESX = exports["es_extended"]:getSharedObject()
+
 RegisterServerCallback('azakit_delivery:itemTaken',function(source, cb)
     local xPlayer = ESX.GetPlayerFromId(source)
     local item = xPlayer.getInventoryItem(SELLITEM) 
